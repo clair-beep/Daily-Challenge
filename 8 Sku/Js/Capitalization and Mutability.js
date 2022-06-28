@@ -1,5 +1,5 @@
 //my solution 
-function capitalizeWord(word) {
+function shortcut(string) {
     return word
       .split(' ')
       .map(
