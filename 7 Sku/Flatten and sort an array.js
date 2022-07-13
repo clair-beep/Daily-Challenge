@@ -8,5 +8,5 @@ function flattenAndSort(array) {
     return array
       .reduce((result, current) => [...result, ...current],[])
       .sort((a, b) => a - b)
-      ;
+      
   }
