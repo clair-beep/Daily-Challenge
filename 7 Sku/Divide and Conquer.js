@@ -1,5 +1,9 @@
 //ALTERNATIVE
 
+
+const divCon = x => x.reduce((acc, el) => typeof el === 'string' ? acc - Number(el) : acc + el, 0)
+
+
 //MY SOLUTION 
 // parameteres mixed stings and num in an array 
 
