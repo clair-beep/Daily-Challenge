@@ -30,15 +30,14 @@ After 3rd Year -->
 // CREATE A LOOP 
 // ACONDITIOAL TO EVALUATE if Desired Principal 'D' is equal to Principal 'P' this should return 0 Years.
 function calculateYears(principal, interest, tax, desired) {
-    let time = 0; 
+    let years = 0; 
     if (principal == desired) {
         return 0;
     } else {
         for (let index = 0; principal <= desired; index++) {
            
             principal = (interest * principal + principal - interest * principal * tax);
-            console.log(principal)
-            time++
+            years++
             }
       
         }
