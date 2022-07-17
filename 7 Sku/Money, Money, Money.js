@@ -44,7 +44,8 @@ function calculateYears(principal, interest, tax, desired) {
     return time;
     }
     
-// ALTERNATIVE 
+// ALTERNATIVE SOLUTION
+//MORE ORGANIZED 
 
 function calculateYears(principal, interest, tax, desired) {
     // your code
