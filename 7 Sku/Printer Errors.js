@@ -11,7 +11,7 @@
 
 // make a variable to define errors 
 // make str an arr 
-// loop through it 
+// loop through itr 
 
 function printerError(s) {
     let count = 0;
