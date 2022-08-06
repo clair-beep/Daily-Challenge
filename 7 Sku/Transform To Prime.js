@@ -43,4 +43,3 @@ function minimumNumber(numbers) {
   }
 
 //ALTERNATIVE 
-
