@@ -1,0 +1,11 @@
+//solution 
+function queueTime(customers, n) {
+
+
+  let tills = Array(n <= 0 ? 1 : n).fill(0);
+  customers.forEach(customer => {
+    const fastest = tills.indexOf(Math.min(...tills));
+    tills[fastest] += customer;
+  });
+  return Math.max(...tills);
+}
