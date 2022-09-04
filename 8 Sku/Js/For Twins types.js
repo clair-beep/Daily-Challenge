@@ -4,6 +4,6 @@ function typeValidation(variable, type) {
   }
   
   console.log(typeValidation('s', "number"))//, true);
-  //alternative
+  //alternativeee
 
   const typeValidation = (variable, type) => typeof variable === type ;
