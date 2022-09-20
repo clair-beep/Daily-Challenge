@@ -9,3 +9,5 @@ function removeRotten(arr){
 //   function removeRotten(bagOfFruits){
     // if(!bagOfFruits || !bagOfFruits.length) {return [];} 
     // else {return bagOfFruits.map(e => e.replace(/^rotten/g, '').toLowerCase())};
+
+    //  console.log(removeRotten(["apple","banana","kiwi","melone","orange"]))
