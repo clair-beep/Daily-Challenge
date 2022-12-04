@@ -10,3 +10,7 @@ var number = function(busStops){
    }
    return peopleIntoBus - peopleOut
  }
+
+ //alternative
+
+ const number = busStops => busStops.reduce((p,n) => p+n[0]-n[1],0)
