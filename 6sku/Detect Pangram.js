@@ -9,7 +9,7 @@ Examples:
  "The quick brown fox jumps over the lazy dog." => true
  "Example Tests" => false
 
- 
+
 */
 
 //solution 
@@ -27,4 +27,12 @@ function isPangram(string){
     count = count + 1
     }
     return count === 26
+  }
+
+  //alternative
+
+  function isPangram(string){
+    return 'abcdefghijklmnopqrstuvwxyz'
+      .split('')
+      .every((x) => string.toLowerCase().includes(x));
   }
