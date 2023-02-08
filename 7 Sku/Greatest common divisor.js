@@ -24,3 +24,14 @@ function mygcd(x, y) {
   );
   return Math.max(...intersection);
 }
+
+//alternative
+
+function gcd(x, y) {
+  while (y !== 0) {
+    let t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
