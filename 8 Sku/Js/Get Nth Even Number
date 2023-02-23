@@ -1,0 +1,6 @@
+// solution
+function nthEven(n) {
+  return (n - 1) * 2;
+}
+//Alternative
+const nthEven = (n) => n * 2 - 2;
