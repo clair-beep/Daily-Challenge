@@ -7,3 +7,4 @@ function remove(s) {
 }
 
 //alternative
+const remove = (s) => s.replace(/!$/, '');
