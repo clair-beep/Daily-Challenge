@@ -14,18 +14,21 @@
 // #  * the correct answer is the pair whose second value has the smallest index
 // == [4, 2]
 
-// sum_pairs([0, 0, -2, 3], 2)
-// #  there are no pairs of values that can be added to produce 2.
-// == None/nil/undefined (Based on the language)
+// Approach
+// A better approach is to use a hash table to store the index of each number in the array as we loop through it. For each number, we calculate its complement (i.e. the value that would add up to the target value if added to the current number) and check if it's already in the hash table. If it is, then we've found the pair of numbers that add up to the target value. If it's not, then we add the current number and its index to the hash table and continue looping.
 
-// sum_pairs([10, 5, 2, 3, 7, 5],         10)
-// #              ^-----------^   5 + 5 = 10, indices: 1, 5
-// #                    ^--^      3 + 7 = 10, indices: 3, 4 *
-// #  * the correct answer is the pair whose second value has the smallest index
-// == [3, 7]
-// Negative numbers and duplicate numbers can and will appear.
+// Complexity
+// Time complexity:
 
-// NOTE: There will also be lists tested of lengths upwards of 10,000,000 elements. Be sure your code doesn't time out.
+// Time complexity of this function is O(n), where n is the length of the input array nums
+// This is because we are looping through the array once and doing constant-time operations for each element.
+
+// Space complexity:
+
+// Space complexity of this function is O(n), where n is the length of the input array nums
+// This is because we are using a hash map to store the index of each element, and the worst-case scenario is when all the elements are unique, so the hash map would have to store all n elements
+
+// // NOTE: There will also be lists tested of lengths upwards of 10,000,000 elements. Be sure your code doesn't time out.
 //solution
 function sumPairs(ints, s) {
   let seen = new Set();
